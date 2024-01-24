@@ -1,0 +1,282 @@
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Weights: 400, 600
+
+## Icons
+
+For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)*/
+
+*, 
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--clr-cyan: hsl(171, 66%, 44%);
+	--clr-light-blue: hsl(233, 100%, 69%);
+
+	--clr-primary: hsl(210, 10%, 33%);
+	--clr-secondary: hsl(201, 11%, 66%);
+	--clr-white: hsl(0, 0%, 100%);
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.5;
+	margin-bottom: 1rem;
+}
+
+p {
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	font-size: 1.125 rem;
+}
+
+.wrapper-one-column {
+	width: min(90%, 650px);
+	margin-inline: auto;
+}
+
+.btn {
+	padding: 10px 25px;
+	border-radius: 25px;
+	text-decoration: none;
+	color: var(--clr-white);
+}
+
+.btn-container {
+	margin: 1rem 0;
+	display: flex;
+	justify-content: center;
+	gap: .5rem;
+}
+
+@media (max-width: 500px) {
+	.btn-container {
+		flex-direction: column;
+		width: min(90%, 300px);
+		margin-inline: auto;
+	}
+}
+
+.btn-primary {
+	background: var(--clr-light-blue);
+
+}
+
+.btn-secondary {
+	background: var(--clr-cyan);
+}
+
+body {
+	font-family: 'Radio Canada', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+main {
+	background: url(images/bg-header-desktop.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 5rem 0;
+}
+
+main img {
+	margin: 0 auto 2rem;
+}
+
+main p {
+	margin-bottom: 3rem;
+}
+
+/* Section Two */
+
+.two-col {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 3rem;
+	width: min(90%, 1440px);
+	margin: 5rem auto 0;
+}
+
+.snippets-features {
+	text-align: left;
+	width: min(90%, 450px);
+	margin-inline: auto;
+}
+
+@media (max-width: 750px) {
+	.two-col {
+		grid-template-columns: 1fr;
+	}
+
+	.snippets-features {
+		text-align: center;
+	}
+}
+
+/* Section Three */
+
+.section-three {
+	margin: 5rem 0;
+}
+
+/* Section Four */
+
+.section-four {
+	margin-bottom: 4rem;
+}
+
+.three-col {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	width: min(90%, 1000px);
+	margin: 4rem auto 0;
+}
+
+.card {
+	width: min(90%, 325px);
+	margin-inline: auto;
+}
+
+.three-col img {
+	margin: 0 auto 2rem;
+	height: 30px;
+}
+
+@media (max-width: 800px) {
+	.three-col {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Client Logo Section */
+
+.client-logo-section {
+	margin: 7rem 0;
+}
+
+.client-logo-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+	place-items: center;
+	align-content: center;
+	gap: 2rem 1rem;
+	width: min(90%, 1100px);
+	margin-inline: auto;
+}
+
+/* Footer */
+
+footer {
+	background: hsl(0, 0%, 90%, 1.0);
+	margin-top: 6rem;
+	padding: 2rem 0;
+}
+
+footer .logo {
+	max-width: 50px;
+}
+
+.three-col-footer {
+	width: min(90%, 1100px);
+	margin-inline: auto;
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: center;
+	gap: 2rem 5rem;
+}
+
+.footer-links {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem 2rem;
+	text-align: left;
+}
+
+.footer-links a {
+	color: var(--clr-primary);
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.social-icons {
+	display: flex;
+	gap: 1rem 2rem;
+	margin-left: auto;
+}
+
+@media (max-width: 725px) {
+	.three-col-footer {
+		flex-direction: column;
+	}
+
+	.footer-links {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.social-icons {
+		margin: 0 auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
